@@ -18,4 +18,4 @@ management:
       show-details: always
       
 server:
-  port: 8085
+  port: 8080
