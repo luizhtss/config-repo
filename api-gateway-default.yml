@@ -10,7 +10,11 @@ spring:
             locator:
               lower-case-service-id: true
               enabled: true
-
+          routes:
+            - id: ms-crud
+              uri: lb://ms-crud
+              predicates:
+                - Path=/crud/**
 management:
   endpoints:
     web:
