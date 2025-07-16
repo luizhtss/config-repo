@@ -1,13 +1,16 @@
 spring:
+  application:
+    name: api-gateway
+
   cloud:
     gateway:
       server:
         webflux:
           discovery:
             locator:
-              enabled: true
               lower-case-service-id: true
-          routes: []
+              enabled: true
+
 management:
   endpoints:
     web:
@@ -16,6 +19,6 @@ management:
   endpoint:
     health:
       show-details: always
-      
+
 server:
   port: 8080
