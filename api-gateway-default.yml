@@ -12,7 +12,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: prometheus,health,info
+        include: prometheus,health,info,gateway
   endpoint:
     health:
       show-details: always
