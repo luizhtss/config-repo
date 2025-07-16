@@ -9,7 +9,7 @@ spring:
           discovery:
             locator:
               lower-case-service-id: true
-              enabled: false
+              enabled: true
           routes:
             - id: ms-crud
               uri: lb://ms-crud
