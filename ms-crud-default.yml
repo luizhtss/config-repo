@@ -4,6 +4,10 @@ spring:
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
   jpa:
     hibernate:
