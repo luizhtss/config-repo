@@ -1,7 +1,7 @@
 server:
   port: 8088
 spring:
-  application.name: embedding-service
+  application.name: ms-ai
   ai:
     openai:
       api-key: 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
