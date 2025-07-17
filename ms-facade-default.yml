@@ -16,12 +16,14 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: health,info,prometheus,refresh
   metrics:
     export:
       prometheus:
         enabled: true
 
+greeting:
+    message: "a message 4you"
 
 resilience4j:
   ratelimiter:
