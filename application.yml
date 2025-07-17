@@ -1,7 +1,0 @@
-spring:
-  profiles:
-    active: default
-
-logging:
-  level:
-    root: INFO
