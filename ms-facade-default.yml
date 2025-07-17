@@ -22,8 +22,8 @@ resilience4j:
   circuitbreaker:
     instances:
       ms‑ai‑cb:
-        slidingWindowType: TIME_BASED
-        slidingWindowSize: 5m
+        slidingWindowType: COUNT_BASED    
+        slidingWindowSize: 10
         minimumNumberOfCalls: 3
         failureRateThreshold: 50
         waitDurationInOpenState: 5m
