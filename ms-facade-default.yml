@@ -10,3 +10,26 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+resilience4j:
+  ratelimiter:
+    instances:
+      ms‑ai:
+        limitForPeriod: 3
+        limitRefreshPeriod: 5m
+        timeoutDuration: 100ms
+
+  circuitbreaker:
+    instances:
+      ms‑ai‑cb:
+        slidingWindowType: TIME_BASED
+        slidingWindowSize: 5m
+        minimumNumberOfCalls: 3
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5m
+
+  bulkhead:
+    instances:
+      ms‑ai‑semaphore:
+        maxConcurrentCalls: 2
+        maxWaitDuration: 0
