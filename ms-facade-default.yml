@@ -3,7 +3,7 @@ server:
   
   
 ms-ai:
-    base-url: http://localhost:8089
+    base-url: http://localhost:8089/plan
 
 
 eureka:
