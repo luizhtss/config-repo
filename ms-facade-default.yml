@@ -23,7 +23,7 @@ management:
         enabled: true
 
 greeting:
-    message: "a message 4us"
+    message: "TEste"
 
 resilience4j:
   ratelimiter:
