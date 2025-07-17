@@ -31,7 +31,7 @@ resilience4j:
       ms‑ai:
         limitForPeriod: 3
         limitRefreshPeriod: 5m
-        timeoutDuration: 100ms
+        timeoutDuration: 1m
 
   circuitbreaker:
     instances:
@@ -46,4 +46,4 @@ resilience4j:
     instances:
       ms‑ai‑semaphore:
         maxConcurrentCalls: 2
-        maxWaitDuration: 0
+        maxWaitDuration: 3s
