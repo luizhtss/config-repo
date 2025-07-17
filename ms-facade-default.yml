@@ -3,7 +3,7 @@ server:
   
   
 ms-ai:
-    base-url: http://localhost:8089/plan
+    base-url: http://localhost:8089
 
 
 eureka:
@@ -16,7 +16,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,prometheus,refresh
+        include: refresh
   metrics:
     export:
       prometheus:
