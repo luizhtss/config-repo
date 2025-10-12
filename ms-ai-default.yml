@@ -4,7 +4,7 @@ spring:
   application.name: ms-ai
   ai:
     openai:
-      api-key: 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
+      api-key: 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
       chat:
         options:
           model: gpt-4.1
