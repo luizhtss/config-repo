@@ -9,3 +9,5 @@ eureka:
 crud-base-url: http://localhost:8080/ms-crud
 ai-base-url:   http://localhost:8080/ms-ai
 facade-base-url: http://localhost:8080/ms-facade
+
+spring.graphql.graphiql.enable=true
