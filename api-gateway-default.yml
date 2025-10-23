@@ -15,6 +15,10 @@ spring:
               uri: lb://ms-crud
               predicates:
                 - Path=/crud/**
+            - id: ms-graphql
+              uri: lb://ms-bff-graphql
+              predicates:
+                - Path=/graphql/**
 management:
   endpoints:
     web:
